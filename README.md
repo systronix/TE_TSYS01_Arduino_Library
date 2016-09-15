@@ -5,7 +5,7 @@ Arduino library for the [TSYS01 sensor](http://www.te.com/usa-en/product-G-NICO-
 
 ##Sensor Description
 
-The Temperature System Sensor (TSYS) series, TSYS01 peripheral module provides the necessary hardware to interface the TSYS01 digital temperature sensor to any system that utilizes a Digilent Pmod™ compatible expansion ports configurable for I2C communication. The TSYS01 sensor is a self-contained temperature sensor that is  fully calibrated during manufacture. The sensor can operate from 2.2V to 3.6V. The TSYS01 has a low power stand-by mode for power-sensitive applications. 
+The TSYS01 sensor is a self-contained temperature sensor that is  fully calibrated during manufacture. The sensor can operate from 2.2V to 3.6V. The TSYS01 has a low power stand-by mode for power-sensitive applications. 
 
 ###Specifications
 * Measures temperature from -40°C to 125°C
