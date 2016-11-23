@@ -34,6 +34,12 @@ class tsys01 {
 
 public:
   tsys01();
+
+  /**
+   * \brief Perform initial configuration. Has to be called once.
+   */
+  void begin();
+
   /**
    * \brief Check whether TSYS01 device is connected
    *

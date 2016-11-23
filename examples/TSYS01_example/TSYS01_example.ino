@@ -8,6 +8,8 @@ void setup(void) {
   Serial.println("==== TE Connectivity ====");
   Serial.println("======== TSYS01 =========");
   Serial.println("======== Measure ========");
+
+  m_tsys01.begin();
 }
 
 void loop(void) {

@@ -21,9 +21,13 @@
 tsys01::tsys01(void)
     : coeff_mul{COEFF_MUL_0, COEFF_MUL_1, COEFF_MUL_2, COEFF_MUL_3,
                 COEFF_MUL_4} {
-  Wire.begin();
   tsys01_coeff_read = false;
 }
+
+/**
+ * \brief Perform initial configuration. Has to be called once.
+ */
+void tsys01::begin(void) { Wire.begin(); }
 
 /**
  * \brief Configures TSYS01 I2C address to be used depending on HW configuration
