@@ -190,7 +190,6 @@ bool tsys01::crc_check(uint16_t *n_prom) {
  */
 enum tsys01_status tsys01::conversion_and_read_adc(uint32_t *adc) {
   enum tsys01_status status;
-  uint8_t i2c_status;
   uint8_t buffer[3];
   uint8_t i;
 
@@ -217,11 +216,6 @@ enum tsys01_status tsys01::conversion_and_read_adc(uint32_t *adc) {
   // Send the read command
   if (status != tsys01_status_ok)
     return status;
-
-  if (i2c_status == tsys01_STATUS_ERR_OVERFLOW)
-    return tsys01_status_no_i2c_acknowledge;
-  if (i2c_status != tsys01_STATUS_OK)
-    return tsys01_status_i2c_transfer_error;
 
   *adc = ((uint32_t)buffer[0] << 16) | ((uint32_t)buffer[1] << 8) |
          (uint32_t)buffer[2];
