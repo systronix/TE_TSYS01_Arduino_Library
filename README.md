@@ -3,11 +3,11 @@ Arduino library for the [TSYS01 sensor](http://www.te.com/usa-en/product-G-NICO-
 
 ![tsys01](http://www.te.com/content/dam/te-com/catalog/part/0GN/ICO/018/G-NICO-018-t1.jpg/jcr:content/renditions/product-details.png)
 
-##Sensor Description
+## Sensor Description
 
 The TSYS01 sensor is a self-contained temperature sensor that is  fully calibrated during manufacture. The sensor can operate from 2.2V to 3.6V. The TSYS01 has a low power stand-by mode for power-sensitive applications. 
 
-###Specifications
+### Specifications
 * Measures temperature from -40°C to 125°C
 *	I2C communication
 *	Fully calibrated
@@ -15,7 +15,7 @@ The TSYS01 sensor is a self-contained temperature sensor that is  fully calibrat
 *	Very low power consumption
 
 
-##Library features
+## Library features
 * Connection test
 * Reset
 * Aquisition resolution management
