@@ -1,8 +1,4 @@
-#if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
-#else
-#include "WProgram.h"
-#endif
 
 #define TSYS01_ADDR_CSB_1 0x76 // 0b1110110
 #define TSYS01_ADDR_CSB_0 0x77 // 0b1110111
